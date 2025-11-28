@@ -1,0 +1,7 @@
+{
+  "name": "FurniFlow ERP",
+  "description": "A comprehensive ERP, CRM, and HR management system designed specifically for modern furniture retailers. Features inventory tracking, customer management, sales pipeline, and staff scheduling.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
