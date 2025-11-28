@@ -1,7 +1,18 @@
 
 import { VersionLog } from './types';
 
-import v2_42_3 from './logs/v2.42.3';
+// Inline latest version to prevent build errors if file sync fails
+const v2_42_3: VersionLog = {
+  version: '2.42.3',
+  date: '2024-01-09',
+  changes: [
+    'Localization: Achieved 100% Arabic coverage across all modules.',
+    'System: Fixed automated version log loading.',
+    'Performance: Optimized build process.'
+  ],
+  isMajor: false
+};
+
 import v2_42_2 from './logs/v2.42.2';
 import v2_42_1 from './logs/v2.42.1';
 import v2_42_0 from './logs/v2.42.0';
@@ -42,7 +53,8 @@ import v2_10_0 from './logs/v2.10.0';
 import v2_4_0 from './logs/v2.4.0';
 
 const rawVersions: VersionLog[] = [
-  v2_42_3, v2_42_2, v2_42_1, v2_42_0,
+  v2_42_3,
+  v2_42_2, v2_42_1, v2_42_0,
   v2_41_1, v2_41_0,
   v2_40_1, v2_40_0,
   v2_39_1, v2_39_0,
