@@ -97,6 +97,7 @@ const Sidebar: React.FC<SidebarProps> = ({
           <div className="relative">
             {canSwitchBranch ? (
               <div className="relative group">
+                {/* Changed to bg-white and text-slate-900 to ensure visibility */}
                 <select 
                   value={selectedBranchId}
                   onChange={(e) => onBranchChange(e.target.value)}

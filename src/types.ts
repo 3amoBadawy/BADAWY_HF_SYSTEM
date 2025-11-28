@@ -209,7 +209,7 @@ export interface Transaction {
   status: TransactionStatus;
   branchId: string;
   customerId?: string; // Link transaction to a customer if applicable
-  employeeId?: string; // Link transaction to a employee (for payroll history)
+  employeeId?: string; // Link transaction to an employee (for payroll history)
   orderId?: string; // Link transaction to a specific Sales Order (e.g. Order Expense)
   contractSnapshot?: string; // Base64 image of payment contract
   transferSnapshot?: string; // Base64 image of transfer receipt
