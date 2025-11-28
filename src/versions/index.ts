@@ -42,37 +42,21 @@ import v2_10_0 from './logs/v2.10.0';
 import v2_4_0 from './logs/v2.4.0';
 
 const rawVersions: VersionLog[] = [
-  v2_42_3,
-  v2_42_2,
-  v2_42_1,
-  v2_42_0,
-  v2_41_1,
-  v2_41_0,
-  v2_40_1,
-  v2_40_0,
-  v2_39_1,
-  v2_39_0,
+  v2_42_3, v2_42_2, v2_42_1, v2_42_0,
+  v2_41_1, v2_41_0,
+  v2_40_1, v2_40_0,
+  v2_39_1, v2_39_0,
   v2_38_0,
   v2_37_0,
   v2_36_0,
-  v2_35_1,
-  v2_35_0,
-  v2_34_1,
-  v2_34_0,
-  v2_33_3,
-  v2_33_2,
-  v2_33_1,
-  v2_33_0,
-  v2_32_1,
-  v2_32_0,
-  v2_31_1,
-  v2_31_0,
-  v2_30_2,
-  v2_30_1,
-  v2_30_0,
+  v2_35_1, v2_35_0,
+  v2_34_1, v2_34_0,
+  v2_33_3, v2_33_2, v2_33_1, v2_33_0,
+  v2_32_1, v2_32_0,
+  v2_31_1, v2_31_0,
+  v2_30_2, v2_30_1, v2_30_0,
   v2_29_0,
-  v2_28_1,
-  v2_28_0,
+  v2_28_1, v2_28_0,
   v2_27_0,
   v2_26_0,
   v2_25_0,
@@ -83,8 +67,6 @@ const rawVersions: VersionLog[] = [
   v2_4_0
 ];
 
-// Sort versions by date (newest first)
 export const VERSIONS = rawVersions.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-// Export the latest version string for the footer
 export const LATEST_VERSION = VERSIONS[0]?.version || 'Unknown';
