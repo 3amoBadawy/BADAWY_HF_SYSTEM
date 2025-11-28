@@ -1,4 +1,3 @@
-
 import { VersionLog } from './types';
 
 import v2_42_3 from './logs/v2.42.3';
