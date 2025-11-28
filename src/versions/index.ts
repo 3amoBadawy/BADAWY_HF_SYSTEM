@@ -1,7 +1,7 @@
 
 import { VersionLog } from './types';
 
-// Inline latest version to prevent build errors if file sync fails
+// FIXED: Inline latest version to prevent build errors if file sync fails on server
 const v2_42_3: VersionLog = {
   version: '2.42.3',
   date: '2024-01-09',
