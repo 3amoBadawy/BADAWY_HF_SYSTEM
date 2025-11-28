@@ -1,7 +1,7 @@
 
 import { VersionLog } from './types';
 
-// FIXED: Inline latest version to prevent build errors if file sync fails on server
+// --- INLINED LATEST VERSIONS TO FIX SERVER BUILD ERRORS ---
 const v2_42_3: VersionLog = {
   version: '2.42.3',
   date: '2024-01-09',
@@ -13,8 +13,30 @@ const v2_42_3: VersionLog = {
   isMajor: false
 };
 
-import v2_42_2 from './logs/v2.42.2';
-import v2_42_1 from './logs/v2.42.1';
+const v2_42_2: VersionLog = {
+  version: '2.42.2',
+  date: '2024-01-08',
+  changes: [
+    'Localization: Complete 100% Arabic translation for all remaining modules (Settings, HR, Purchasing, Finance).',
+    'Localization: Translated all modal forms, alerts, and placeholders.',
+    'UI: Polished RTL layouts for all modals.'
+  ],
+  isMajor: false
+};
+
+const v2_42_1: VersionLog = {
+  version: '2.42.1',
+  date: '2024-01-08',
+  changes: [
+    'Localization: Complete translation of Sales Module (Orders, Details, Cart, New Order).',
+    'Localization: Complete translation of Inventory Module (Product Grid, Modal, Media).',
+    'Localization: Complete translation of CRM Module (Customer List, History, Add Customer).',
+    'Localization: Standardized Arabic terminology across all business modules.'
+  ],
+  isMajor: false
+};
+// ----------------------------------------------------------
+
 import v2_42_0 from './logs/v2.42.0';
 import v2_41_1 from './logs/v2.41.1';
 import v2_41_0 from './logs/v2.41.0';
